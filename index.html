@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Ruslan Nagimov -- Personal Page</title>
+<style type="text/css" media="screen">
+    #editor { 
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+</style>
+</head>
+<body>
+
+<div id="editor">
+# Ruslan Nagimov - Personal Page
+
+The site is coming soon (or never)!
+
+In the meantime, you can contact me via email:
+
+```python
+email = '@'.join(['nagimov', 'outlook.com'])
+print(email)
+```
+
+You can also find me at:
+
+* [my blog](nagimov.me)
+* [github](github.com/nagimov)
+
+</div>
+
+<script src="/ace-builds/src-min/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    document.getElementById('editor').style.fontSize='16px';
+    var editor = ace.edit("editor");
+    var themes = [
+        "xcode", 
+        "ambiance", 
+        "chaos", 
+        "chrome", 
+        "clouds", 
+        "clouds_midnight", 
+        "cobalt", 
+        "crimson_editor", 
+        "dawn", 
+        "dreamweaver", 
+        "eclipse", 
+        "github", 
+        "idle_fingers", 
+        "iplastic", 
+        "katzenmilch", 
+        "kr_theme", 
+        "kuroir", 
+        "merbivore", 
+        "merbivore_soft", 
+        "mono_industrial", 
+        "monokai", 
+        "pastel_on_dark", 
+        "solarized_dark", 
+        "solarized_light", 
+        "sqlserver", 
+        "terminal", 
+        "textmate", 
+        "tomorrow", 
+        "tomorrow_night", 
+        "tomorrow_night_blue", 
+        "tomorrow_night_bright", 
+        "tomorrow_night_eighties", 
+        "twilight", 
+        "vibrant_ink", 
+    ];
+    var theme = themes[Math.floor(Math.random() * themes.length)];
+    editor.setTheme("ace/theme/".concat(theme));
+    editor.getSession().setMode("ace/mode/markdown");
+</script>
+
+<!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
+<script>
+(function(f, a, t, h, o, m){
+    a[h]=a[h]||function(){
+        (a[h].q=a[h].q||[]).push(arguments)
+    };
+    o=f.createElement('script'),
+    m=f.getElementsByTagName('script')[0];
+    o.async=1; o.src=t; o.id='fathom-script';
+    m.parentNode.insertBefore(o,m)
+})(document, window, '//fathom.ngm.me/tracker.js', 'fathom');
+fathom('set', 'siteId', 'AHVRY');
+fathom('trackPageview');
+</script>
+<!-- / Fathom -->
+
+</body>
+</html>
